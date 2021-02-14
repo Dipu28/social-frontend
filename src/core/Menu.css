@@ -1,0 +1,31 @@
+.menu {
+  padding-left: 40px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: monospace;
+  border-bottom: 3px solid whitesmoke;
+}
+.menu__find {
+  display: flex;
+}
+.menu__sign {
+  display: flex;
+}
+/* @media only screen and (max-width: 2400px) {
+} */
+
+@media only screen and (max-width: 840px) {
+  .menu {
+    padding-left: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .menu__sign {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__find {
+    display: flex;
+    flex-direction: column;
+  }
+}

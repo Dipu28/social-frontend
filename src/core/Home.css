@@ -1,0 +1,54 @@
+@media only screen and (max-width: 550px) {
+  .home-container {
+    grid-column: full-start / full-end;
+  }
+  .home__title {
+    font-size: 3.5rem !important;
+    line-height: 3.5rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 0;
+  }
+  .home__para {
+    font-size: 2.4rem !important;
+    font-weight: 200 !important;
+    padding: 1.5rem !important;
+    line-height: normal !important;
+    text-align: center !important;
+  }
+  .home__texts {
+    font-size: 1.5rem !important;
+  }
+}
+
+.home-container {
+  grid-column: center-start / center-end;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.home__title {
+  font-family: cursive;
+  line-height: normal;
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 5rem;
+  color: #03a87c;
+}
+
+.home__para {
+  font-family: monospace;
+  font-size: 4rem;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 3rem;
+  color: #222;
+}
+
+.home__texts {
+  font-family: serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2.5rem;
+}
