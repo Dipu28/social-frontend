@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { signin, authenticate } from "../auth";
 import SocialLogin from "./SocialLogin";
-import "../user/Signin.css";
+import "../user/Signup.css";
+
 class Signin extends Component {
   constructor() {
     super();
@@ -82,49 +83,43 @@ class Signin extends Component {
   };
 
   signinForm = (email, password, recaptcha) => (
-    <div className="signin-form">
-      <div className="signin-form__wrapper">
-        <form className="signin-form">
-          <div className="form-group__input">
-            <input
-              onChange={this.handleChange("email")}
-              type="email"
-              className="form-control"
-              value={email}
-              placeholder="Email"
-            />
-          </div>
-          <div className="form-group__input">
-            <input
-              onChange={this.handleChange("password")}
-              type="password"
-              className="form-control"
-              value={password}
-              placeholder="Password"
-            />
-          </div>
-
-          <div className="form-group__input">
-            <label className="form-group__date">
-              {recaptcha ? "Thanks. You got it!" : "What day is today?"}
-            </label>
-
-            <input
-              onChange={this.recaptchaHandler}
-              type="text"
-              className="form-control"
-            />
-          </div>
-
-          <button
-            onClick={this.clickSubmit}
-            className="signin-form__signin-btn"
-          >
-            Submit
-          </button>
-        </form>
+    <form>
+      <div className="form-group">
+        <label className="text-n">Email</label>
+        <input
+          onChange={this.handleChange("email")}
+          type="email"
+          className="form-control"
+          value={email}
+        />
       </div>
-    </div>
+      <div className="form-group">
+        <label className="text-n">Password</label>
+        <input
+          onChange={this.handleChange("password")}
+          type="password"
+          className="form-control"
+          value={password}
+        />
+      </div>
+
+      <div className="form-group">
+        <label className="text-n">
+          {recaptcha ? "Thanks. You got it!" : "What day is today?"}
+        </label>
+
+        <input
+          onChange={this.recaptchaHandler}
+          type="text"
+          className="form-control"
+        />
+      </div>
+      <div>
+        <button onClick={this.clickSubmit} className="signin-form__signin-btn">
+          SIGN IN
+        </button>
+      </div>
+    </form>
   );
 
   render() {
@@ -142,11 +137,9 @@ class Signin extends Component {
     }
 
     return (
-      <div className="signin-form">
-        <h2 className="signin-form__title">Sign In</h2>
-        <div className="signin-form__wrapper">
-          <SocialLogin />
-        </div>
+      <div className="container signup">
+        <h2 className="signup__title">SignIn</h2>
+        <SocialLogin />
 
         <div
           className="alert alert-danger"

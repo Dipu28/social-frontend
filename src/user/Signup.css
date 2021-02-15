@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) {
+  .signup {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .signin-form--link {
+    font-size: 1rem !important;
+  }
+
+  .signup__title {
+    font-size: 2rem !important;
+  }
+}
+
+.signup__title {
+  font-family: monospace;
+  padding: 2rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  color: #03a87c;
+}
+
+.signin-form__forgot-password {
+  text-align: center;
+}
+
+.signin-form--link {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #03a87c;
+}
+.text-n {
+  color: #03a87c;
+}
+
+.signin-form__signin-btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  background-color: #03a87c;
+  color: #fff;
+}
+.signin-form__signin-btn:hover {
+  background-color: #19cc9c;
+  cursor: pointer;
+}

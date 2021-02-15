@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 2rem 0;
+  border-top: 0.1rem solid #e7e7e7;
+}
+.footer__copyright {
+  text-align: center;
+}
+p {
+  font-size: 1.4rem;
+}
+
+.footer__text-and-author {
+  margin: 0;
+}
+
+.footer__author {
+  color: #03a87c;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 550px) {
+  p {
+    font-size: 1rem;
+  }
+  .footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+}

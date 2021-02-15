@@ -1,0 +1,28 @@
+.findPeople {
+  text-align: center;
+}
+
+.findPeople__title {
+  font-family: monospace;
+  padding: 2rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  color: #03a87c;
+}
+
+.findPeople__img > img {
+  width: 50%;
+  height: 12rem;
+  object-fit: contain;
+}
+
+.findPeople__img > img {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 1rem;
+  border: 0.1rem solid #e7e7e7;
+  box-shadow: 0 19px 38px rgba(39, 36, 36, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
